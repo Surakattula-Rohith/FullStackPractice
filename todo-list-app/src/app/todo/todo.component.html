@@ -1,11 +1,17 @@
-<div>
+<div>  
+    <!-- TwoWay DataBinding = [(ngModel)]="title";<p>{{title}}</p>    -->
   <input [(ngModel)]="newTodo" placeholder="Add a new todo" />
   <button (click)="addTodo()">Add</button>
 </div>
 
 <ul>
+  <!-- *ngFor is Directives (Structural,Attribute,Component) -->
   <li *ngFor="let todo of todos; let i = index">
-    {{ todo }}
+    <!-- OneWay DataBinding- Interpolation = {{user.name}} -->
+    <!-- OneWay DataBinding- PropertyBinding = [disabled]="isDisabled" -->
+    <!-- OneWay DataBinding- EventBinding = (click) ="display()" -->
+     {{i+1}}. {{ todo }} 
     <button (click)="removeTodo(i)">Remove</button>
   </li>
 </ul>
+
