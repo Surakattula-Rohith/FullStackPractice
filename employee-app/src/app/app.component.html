@@ -1,0 +1,14 @@
+<app-dashboard></app-dashboard>
+<div class="container">
+  <h2>Employee Details</h2>
+  <h4>Employee Id : {{ employe.empId }}</h4>
+  <h4>Employee Name : {{ employe.empName | uppercase }}</h4>
+  <h4>Employee Email : {{ employe.emailId }}</h4>
+  <h4>Employee Age : {{ employe.age }}</h4>
+  <p>Deciaml number is : {{ decimalNum | percent }}</p>
+  <p>Current Date : {{ today | date : "short" }}</p>
+  <p>Charachters in Employee name is : {{employe.empName | countLength}}</p>
+</div>
+
+
+<router-outlet></router-outlet>
