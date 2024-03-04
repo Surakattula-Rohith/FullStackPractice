@@ -1,0 +1,80 @@
+<div  class="example-form" >
+    <div>
+        <div >
+            <h2>
+                Enter Book details below
+            </h2>
+            <div class="example-form">
+                <div>
+                    <label>Enter the Book Name</label>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Ex. The Hobbit"
+                        [(ngModel)]="book.bookName"
+                        name="bookName"
+                    />
+                </div>
+                <div>
+                    <label>Enter the Author Name</label>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Ex. Gandalf"
+                        [(ngModel)]="book.authorName"
+                        name="authorName"
+                    />
+                </div>
+                <div>
+                    <label>Enter the Year Published</label>
+                    <input
+                        type="number"
+                        required
+                        placeholder="Ex. 1980"
+                        [(ngModel)]="book.year"
+                        name="year"
+                    />
+                </div>
+                <div>
+                    <label>Enter the language</label>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Ex. Elvish"
+                        [(ngModel)]="book.lang"
+                        name="lang"
+                    />
+                </div>
+                <button type="button" (click)="newBook()">Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+<div class="form-list">
+    <h2>The Books Listed are</h2>
+    <div>
+      <table >
+        <thead>
+          <tr>
+            <th scope="col">Book Id</th>
+            <th scope="col">Book Name</th>
+            <th scope="col">Author Name</th>
+            <th scope="col">Year Published</th>
+            <th scope="col">lang</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let book of bookList">
+          <tr>
+            <td scope="row">{{ book.id }}</td>
+            <td>{{ book.bookName }}</td>
+            <td>{{ book.authorName }}</td>
+            <td>{{ book.year }}</td>
+            <td>{{ book.lang }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

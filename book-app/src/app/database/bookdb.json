@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": "A001",
+      "bookName": "Lurking In The Elements",
+      "authorName": "Albert Einstein",
+      "year": 1987,
+      "lang": "english"
+    },
+    {
+      "id": "BE4002",
+      "bookName": "Shelter In The East",
+      "authorName": "James Maxwell",
+      "year": 2023,
+      "lang": "sanskit"
+    },
+    {
+      "id": "6f82",
+      "bookName": "Creed Arena",
+      "authorName": "Dwyane John",
+      "year": 2017,
+      "lang": "Italian"
+    }
+  ]
+}
