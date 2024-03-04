@@ -10,7 +10,6 @@ export class Employee {
         this.empId = empId;
         this.emailId = emailId;
         this.age = age;
-
     }
 
 }

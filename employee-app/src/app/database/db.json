@@ -1,0 +1,29 @@
+{
+    "employee": [
+      {
+        "empId": 1,
+        "empName": "Rohith",
+        "emailId": "rohith@gamil.com",
+        "age":23
+      },
+      {
+        "empId": 2,
+        "empName": "Ram",
+        "emailId": "ram@yahoo.com",
+        "age":23
+      },
+      {
+        "empId": 3,
+        "empName": "Jane",
+        "emailId": "jane@gamil.com",
+        "age":23
+      },
+      {
+        
+        "empId": 4,
+        "empName": "Ishika",
+        "emailId": "ishika@apple.com",
+        "age":23
+      }
+    ]
+  }

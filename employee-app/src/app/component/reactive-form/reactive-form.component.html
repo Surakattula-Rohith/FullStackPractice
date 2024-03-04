@@ -1,0 +1,36 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <h2>Reactive Form</h2>
+  <ul>
+    <li>
+      In Reactive Forms, the form structure and validation rules are defined
+      programmatically in the component class using FormBuilder and FormControl.
+    </li>
+    <li>
+      Form controls are created using FormControl or FormGroup instances and are
+      associated with the component's data model.
+    </li>
+    <li>
+      Form submission and validation logic are handled in the component class,
+      providing more control and flexibility.
+    </li>
+  </ul>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" formControlName="name" class="form-control" />
+    <div class="error-message" *ngIf="formErrors['name'] !== ''">
+      {{ formErrors["name"] }}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" class="form-control" />
+    <div class="error-message" *ngIf="formErrors['email'] !== ''">
+      {{ formErrors["email"] }}
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">
+    Submit
+  </button>
+</form>

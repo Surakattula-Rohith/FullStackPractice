@@ -1,0 +1,43 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <h2>Template Driven Form</h2>
+  <ul>
+    <li>
+      In Template-Driven Forms, the form structure and validation rules are
+      defined in the HTML template.
+    </li>
+    <li>
+      Directives such as ngModel, ngModelGroup, and ngForm are used to create
+      the form controls and manage their state.
+    </li>
+    <li>
+      Form submission and validation logic are typically handled in the template
+      or through template reference variables.
+    </li>
+  </ul>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      name="name"
+      ngModel
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      ngModel
+      required
+      email
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
