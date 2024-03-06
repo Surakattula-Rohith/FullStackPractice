@@ -38,15 +38,4 @@ export class BookViewComponent {
     });
   }
 
-  onSubmit() {
-    if (this.isFormValid()) {
-      this.newBook();
-    } else {
-      console.log(this.errorMsg);
-    }
-  }
-
-  isFormValid(): boolean {
-    return !!this.book.id && !!this.book.bookName && !!this.book.authorName && !!this.book.year && !!this.book.lang;
-  }
 }
